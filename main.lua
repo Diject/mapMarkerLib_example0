@@ -226,6 +226,8 @@ local function keyDownCallback(e)
         for record, _ in pairs(records) do
             record:remove()
         end
+        -- the map menu usually updates automatically, but if the game is paused, it needs to be updated manually
+        mapMarkerLib.updateLocalMarkers()
         records = {}
         npcIdsWithMarker = {}
         refsWithMarker = {}
