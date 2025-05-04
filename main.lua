@@ -212,6 +212,7 @@ local function createMarkerForPosition(cell, position)
         shortTerm = true, -- the marker will be removed if the player's cell changes from interior to interior, exterior to interior, or interior to exterior
         temporary = true, -- the marker will not be saved to game save files
         group = false, -- if false, the marker will not be grouped with other markers. Only for positional markers.
+        insertBefore = true, -- if true, the marker will be inserted before other markers. Only for positional markers. Markers with this flag cannot be grouped with other markers
     }
 
     -- creates a marker. If unsuccessful, returns nil. It can also be created by mapMarkerLib.addLocalMarker(localMarkerParams)
