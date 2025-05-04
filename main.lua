@@ -288,7 +288,7 @@ event.register(tes3.event.keyDown, keyDownCallback, {filter = tes3.scanCode.y})
 event.register(mapMarkerLib.event.initialized, function()
     -- The library is initialized. You can use it now.
     print("mapMarkerLib is initialized")
-end, {filter = tes3.scanCode.y})
+end)
 
 event.register(mapMarkerLib.event.recordRemoved, function(e)
     -- The record is removed
