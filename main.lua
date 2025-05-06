@@ -1,4 +1,4 @@
--- This example shows how to use the mapMarkerLib v1.3.1
+-- This example shows how to use the mapMarkerLib v1.4.0
 -- This example creates markers for the local map:
 -- For all NPCs that have gold in their inventory. Based on their object id.
 -- For all creatures. Based on their tes3reference.
